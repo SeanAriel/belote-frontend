@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A62404372834FAE900206213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62404362834FAE900206213 /* AppDelegate.swift */; };
+		A62404392834FAE900206213 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A62404382834FAE900206213 /* GameScene.sks */; };
+		A624043B2834FAE900206213 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A624043A2834FAE900206213 /* Actions.sks */; };
+		A624043D2834FAE900206213 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A624043C2834FAE900206213 /* GameScene.swift */; };
+		A624043F2834FAE900206213 /* IPadGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A624043E2834FAE900206213 /* IPadGameViewController.swift */; };
+		A62404422834FAE900206213 /* MainIPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62404402834FAE900206213 /* MainIPhone.storyboard */; };
+		A62404442834FAEA00206213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A62404432834FAEA00206213 /* Assets.xcassets */; };
+		A62404472834FAEA00206213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62404452834FAEA00206213 /* LaunchScreen.storyboard */; };
+		A62EA4DB2843D9CB00530EE6 /* GameTrackingDataWebResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EA4DA2843D9CB00530EE6 /* GameTrackingDataWebResponse.swift */; };
+		A62EA4DD2843DB0D00530EE6 /* GameTrackingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EA4DC2843DB0D00530EE6 /* GameTrackingData.swift */; };
+		A62EA4DF2843DB5F00530EE6 /* GameTrackingDataWebTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EA4DE2843DB5F00530EE6 /* GameTrackingDataWebTransformer.swift */; };
+		A62EA4E12843DFFB00530EE6 /* CloseSessionWebResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EA4E02843DFFB00530EE6 /* CloseSessionWebResponse.swift */; };
+		A62EA4E32843E05000530EE6 /* CloseSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EA4E22843E05000530EE6 /* CloseSession.swift */; };
+		A62EA4E52843E06F00530EE6 /* CloseSessionWebTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EA4E42843E06F00530EE6 /* CloseSessionWebTransformer.swift */; };
+		A62EA4E72844C2B900530EE6 /* LegalActionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A62EA4E62844C2B900530EE6 /* LegalActionsView.xib */; };
+		A62EA4E92844C44800530EE6 /* LegalActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EA4E82844C44800530EE6 /* LegalActionsView.swift */; };
+		A62EA4EB2844D0D400530EE6 /* UIView+aspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EA4EA2844D0D400530EE6 /* UIView+aspectRatio.swift */; };
+		A62EA4ED2844F04D00530EE6 /* UIStackView+remove.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EA4EC2844F04D00530EE6 /* UIStackView+remove.swift */; };
+		A62FD154284E2005005F2DAC /* LayoutCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62FD153284E2005005F2DAC /* LayoutCards.swift */; };
+		A62FD15628549E39005F2DAC /* AiActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A62FD15528549E39005F2DAC /* AiActionView.xib */; };
+		A62FD15828549F0D005F2DAC /* AiActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62FD15728549F0D005F2DAC /* AiActionView.swift */; };
+		A654E1372841129000083235 /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A654E1362841129000083235 /* GameService.swift */; };
+		A679EBCE283B9B7F00F8670D /* Operator+increment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679EBCD283B9B7F00F8670D /* Operator+increment.swift */; };
+		A679EBD0283B9CF600F8670D /* Int+CGFLoat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679EBCF283B9CF600F8670D /* Int+CGFLoat.swift */; };
+		A679EBD2283BE73D00F8670D /* IPhoneGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679EBD1283BE73D00F8670D /* IPhoneGameViewController.swift */; };
+		A679EBD7283CDF4900F8670D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A679EBD6283CDF4900F8670D /* Colors.xcassets */; };
+		A679EBD9283CE0D200F8670D /* IPhoneSetupGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A679EBD8283CE0D200F8670D /* IPhoneSetupGameView.xib */; };
+		A679EBDB283CE0E200F8670D /* IPhoneSetupGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679EBDA283CE0E200F8670D /* IPhoneSetupGameView.swift */; };
+		A679EBDD283D1D0200F8670D /* CustomAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679EBDC283D1D0200F8670D /* CustomAction.swift */; };
+		A679EBED283FEBF700F8670D /* BeloteWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679EBEC283FEBF700F8670D /* BeloteWebService.swift */; };
+		A679EBF0283FEC3100F8670D /* BeloteWebResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679EBEF283FEC3100F8670D /* BeloteWebResponse.swift */; };
+		A679EBF3283FEC6600F8670D /* BeloteWebTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679EBF2283FEC6600F8670D /* BeloteWebTransformer.swift */; };
+		A679EBF6283FECA800F8670D /* BeloteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679EBF5283FECA800F8670D /* BeloteService.swift */; };
+		A679EBFA283FECE000F8670D /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679EBF9283FECE000F8670D /* Empty.swift */; };
+		A679EBFC283FECF000F8670D /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679EBFB283FECF000F8670D /* HTTPManager.swift */; };
+		A679EBFE283FED0200F8670D /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679EBFD283FED0200F8670D /* HTTPRequest.swift */; };
+		A679EC01283FED5D00F8670D /* Belote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679EC00283FED5D00F8670D /* Belote.swift */; };
+		A679EC03283FFB5400F8670D /* SessionCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679EC02283FFB5400F8670D /* SessionCode.swift */; };
+		A679EC05283FFB8800F8670D /* SessionCodeWebResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679EC04283FFB8800F8670D /* SessionCodeWebResponse.swift */; };
+		A679EC07283FFD8200F8670D /* SessionCodeWebTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679EC06283FFD8100F8670D /* SessionCodeWebTransformer.swift */; };
+		A679EC092840102700F8670D /* CardTypeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679EC082840102700F8670D /* CardTypeDTO.swift */; };
+		A67EEE3E28352CC0005CB4FA /* MainIPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67EEE3D28352CC0005CB4FA /* MainIPad.storyboard */; };
+		A67EEE4528353962005CB4FA /* IPadSetupGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A67EEE4428353962005CB4FA /* IPadSetupGameView.xib */; };
+		A67EEE4828353B7A005CB4FA /* UIView+NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67EEE4728353B7A005CB4FA /* UIView+NibLoadable.swift */; };
+		A67EEE4B28353D4F005CB4FA /* IPadSetupGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67EEE4A28353D4F005CB4FA /* IPadSetupGameView.swift */; };
+		A67EEE4E283697CC005CB4FA /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67EEE4D283697CC005CB4FA /* Card.swift */; };
+		A67EEE5028369A77005CB4FA /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67EEE4F28369A77005CB4FA /* CardType.swift */; };
+		A67EEE522837D237005CB4FA /* CGMutablePath+CurvedPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67EEE512837D237005CB4FA /* CGMutablePath+CurvedPath.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A62404332834FAE900206213 /* Belote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Belote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62404362834FAE900206213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A62404382834FAE900206213 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		A624043A2834FAE900206213 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		A624043C2834FAE900206213 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		A624043E2834FAE900206213 /* IPadGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPadGameViewController.swift; sourceTree = "<group>"; };
+		A62404412834FAE900206213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainIPhone.storyboard; sourceTree = "<group>"; };
+		A62404432834FAEA00206213 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A62404462834FAEA00206213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A62EA4DA2843D9CB00530EE6 /* GameTrackingDataWebResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTrackingDataWebResponse.swift; sourceTree = "<group>"; };
+		A62EA4DC2843DB0D00530EE6 /* GameTrackingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTrackingData.swift; sourceTree = "<group>"; };
+		A62EA4DE2843DB5F00530EE6 /* GameTrackingDataWebTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTrackingDataWebTransformer.swift; sourceTree = "<group>"; };
+		A62EA4E02843DFFB00530EE6 /* CloseSessionWebResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseSessionWebResponse.swift; sourceTree = "<group>"; };
+		A62EA4E22843E05000530EE6 /* CloseSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseSession.swift; sourceTree = "<group>"; };
+		A62EA4E42843E06F00530EE6 /* CloseSessionWebTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseSessionWebTransformer.swift; sourceTree = "<group>"; };
+		A62EA4E62844C2B900530EE6 /* LegalActionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LegalActionsView.xib; sourceTree = "<group>"; };
+		A62EA4E82844C44800530EE6 /* LegalActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalActionsView.swift; sourceTree = "<group>"; };
+		A62EA4EA2844D0D400530EE6 /* UIView+aspectRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+aspectRatio.swift"; sourceTree = "<group>"; };
+		A62EA4EC2844F04D00530EE6 /* UIStackView+remove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+remove.swift"; sourceTree = "<group>"; };
+		A62FD153284E2005005F2DAC /* LayoutCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutCards.swift; sourceTree = "<group>"; };
+		A62FD15528549E39005F2DAC /* AiActionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AiActionView.xib; sourceTree = "<group>"; };
+		A62FD15728549F0D005F2DAC /* AiActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiActionView.swift; sourceTree = "<group>"; };
+		A654E1362841129000083235 /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		A679EBCD283B9B7F00F8670D /* Operator+increment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operator+increment.swift"; sourceTree = "<group>"; };
+		A679EBCF283B9CF600F8670D /* Int+CGFLoat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+CGFLoat.swift"; sourceTree = "<group>"; };
+		A679EBD1283BE73D00F8670D /* IPhoneGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPhoneGameViewController.swift; sourceTree = "<group>"; };
+		A679EBD6283CDF4900F8670D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		A679EBD8283CE0D200F8670D /* IPhoneSetupGameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IPhoneSetupGameView.xib; sourceTree = "<group>"; };
+		A679EBDA283CE0E200F8670D /* IPhoneSetupGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPhoneSetupGameView.swift; sourceTree = "<group>"; };
+		A679EBDC283D1D0200F8670D /* CustomAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAction.swift; sourceTree = "<group>"; };
+		A679EBEC283FEBF700F8670D /* BeloteWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeloteWebService.swift; sourceTree = "<group>"; };
+		A679EBEF283FEC3100F8670D /* BeloteWebResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeloteWebResponse.swift; sourceTree = "<group>"; };
+		A679EBF2283FEC6600F8670D /* BeloteWebTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeloteWebTransformer.swift; sourceTree = "<group>"; };
+		A679EBF5283FECA800F8670D /* BeloteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeloteService.swift; sourceTree = "<group>"; };
+		A679EBF9283FECE000F8670D /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		A679EBFB283FECF000F8670D /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
+		A679EBFD283FED0200F8670D /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		A679EC00283FED5D00F8670D /* Belote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Belote.swift; sourceTree = "<group>"; };
+		A679EC02283FFB5400F8670D /* SessionCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCode.swift; sourceTree = "<group>"; };
+		A679EC04283FFB8800F8670D /* SessionCodeWebResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCodeWebResponse.swift; sourceTree = "<group>"; };
+		A679EC06283FFD8100F8670D /* SessionCodeWebTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCodeWebTransformer.swift; sourceTree = "<group>"; };
+		A679EC082840102700F8670D /* CardTypeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypeDTO.swift; sourceTree = "<group>"; };
+		A67EEE3D28352CC0005CB4FA /* MainIPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainIPad.storyboard; sourceTree = "<group>"; };
+		A67EEE4428353962005CB4FA /* IPadSetupGameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IPadSetupGameView.xib; sourceTree = "<group>"; };
+		A67EEE4728353B7A005CB4FA /* UIView+NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NibLoadable.swift"; sourceTree = "<group>"; };
+		A67EEE4A28353D4F005CB4FA /* IPadSetupGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPadSetupGameView.swift; sourceTree = "<group>"; };
+		A67EEE4D283697CC005CB4FA /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A67EEE4F28369A77005CB4FA /* CardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
+		A67EEE512837D237005CB4FA /* CGMutablePath+CurvedPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGMutablePath+CurvedPath.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A62404302834FAE900206213 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A624042A2834FAE900206213 = {
+			isa = PBXGroup;
+			children = (
+				A62404352834FAE900206213 /* Belote */,
+				A62404342834FAE900206213 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A62404342834FAE900206213 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A62404332834FAE900206213 /* Belote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A62404352834FAE900206213 /* Belote */ = {
+			isa = PBXGroup;
+			children = (
+				A679EBDE283FE58200F8670D /* Business Logic */,
+				A679EBD5283BE81900F8670D /* UI */,
+				A67EEE4C283697B7005CB4FA /* Model */,
+				A67EEE4628353B44005CB4FA /* Extension */,
+				A67EEE3F28352F91005CB4FA /* Resource */,
+				A62404362834FAE900206213 /* AppDelegate.swift */,
+				A624043C2834FAE900206213 /* GameScene.swift */,
+				A679EBDC283D1D0200F8670D /* CustomAction.swift */,
+			);
+			path = Belote;
+			sourceTree = "<group>";
+		};
+		A679EBD5283BE81900F8670D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A67EEE4928353D1D005CB4FA /* View */,
+				A624043E2834FAE900206213 /* IPadGameViewController.swift */,
+				A679EBD1283BE73D00F8670D /* IPhoneGameViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A679EBDE283FE58200F8670D /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				A679EBFF283FED3F00F8670D /* Models */,
+				A679EBF7283FECBA00F8670D /* Core Layer */,
+				A679EBF4283FEC8900F8670D /* Services */,
+				A679EBEB283FEBC900F8670D /* WebServices */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		A679EBEB283FEBC900F8670D /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				A679EBEC283FEBF700F8670D /* BeloteWebService.swift */,
+				A679EBF1283FEC4E00F8670D /* Web Transformers */,
+				A679EBEE283FEC1A00F8670D /* Web Models */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		A679EBEE283FEC1A00F8670D /* Web Models */ = {
+			isa = PBXGroup;
+			children = (
+				A679EBEF283FEC3100F8670D /* BeloteWebResponse.swift */,
+				A679EC04283FFB8800F8670D /* SessionCodeWebResponse.swift */,
+				A679EC082840102700F8670D /* CardTypeDTO.swift */,
+				A62EA4DA2843D9CB00530EE6 /* GameTrackingDataWebResponse.swift */,
+				A62EA4E02843DFFB00530EE6 /* CloseSessionWebResponse.swift */,
+			);
+			path = "Web Models";
+			sourceTree = "<group>";
+		};
+		A679EBF1283FEC4E00F8670D /* Web Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				A679EBF2283FEC6600F8670D /* BeloteWebTransformer.swift */,
+				A679EC06283FFD8100F8670D /* SessionCodeWebTransformer.swift */,
+				A62EA4DE2843DB5F00530EE6 /* GameTrackingDataWebTransformer.swift */,
+				A62EA4E42843E06F00530EE6 /* CloseSessionWebTransformer.swift */,
+			);
+			path = "Web Transformers";
+			sourceTree = "<group>";
+		};
+		A679EBF4283FEC8900F8670D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A679EBF5283FECA800F8670D /* BeloteService.swift */,
+				A654E1362841129000083235 /* GameService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A679EBF7283FECBA00F8670D /* Core Layer */ = {
+			isa = PBXGroup;
+			children = (
+				A679EBF8283FECC900F8670D /* HTTP Stuff */,
+			);
+			path = "Core Layer";
+			sourceTree = "<group>";
+		};
+		A679EBF8283FECC900F8670D /* HTTP Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				A679EBF9283FECE000F8670D /* Empty.swift */,
+				A679EBFB283FECF000F8670D /* HTTPManager.swift */,
+				A679EBFD283FED0200F8670D /* HTTPRequest.swift */,
+			);
+			path = "HTTP Stuff";
+			sourceTree = "<group>";
+		};
+		A679EBFF283FED3F00F8670D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A679EC00283FED5D00F8670D /* Belote.swift */,
+				A679EC02283FFB5400F8670D /* SessionCode.swift */,
+				A62EA4DC2843DB0D00530EE6 /* GameTrackingData.swift */,
+				A62EA4E22843E05000530EE6 /* CloseSession.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A67EEE3F28352F91005CB4FA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A62404432834FAEA00206213 /* Assets.xcassets */,
+				A679EBD6283CDF4900F8670D /* Colors.xcassets */,
+				A67EEE4128352FD4005CB4FA /* Storyboard */,
+				A67EEE4028352FCB005CB4FA /* Scene */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A67EEE4028352FCB005CB4FA /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				A67EEE4228353006005CB4FA /* GameScene */,
+				A624043A2834FAE900206213 /* Actions.sks */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		A67EEE4128352FD4005CB4FA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A67EEE432835301A005CB4FA /* Main */,
+				A62404452834FAEA00206213 /* LaunchScreen.storyboard */,
+				A67EEE4428353962005CB4FA /* IPadSetupGameView.xib */,
+				A679EBD8283CE0D200F8670D /* IPhoneSetupGameView.xib */,
+				A62EA4E62844C2B900530EE6 /* LegalActionsView.xib */,
+				A62FD15528549E39005F2DAC /* AiActionView.xib */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A67EEE4228353006005CB4FA /* GameScene */ = {
+			isa = PBXGroup;
+			children = (
+				A62404382834FAE900206213 /* GameScene.sks */,
+			);
+			path = GameScene;
+			sourceTree = "<group>";
+		};
+		A67EEE432835301A005CB4FA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A67EEE3D28352CC0005CB4FA /* MainIPad.storyboard */,
+				A62404402834FAE900206213 /* MainIPhone.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A67EEE4628353B44005CB4FA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A67EEE4728353B7A005CB4FA /* UIView+NibLoadable.swift */,
+				A67EEE512837D237005CB4FA /* CGMutablePath+CurvedPath.swift */,
+				A679EBCD283B9B7F00F8670D /* Operator+increment.swift */,
+				A679EBCF283B9CF600F8670D /* Int+CGFLoat.swift */,
+				A62EA4EA2844D0D400530EE6 /* UIView+aspectRatio.swift */,
+				A62EA4EC2844F04D00530EE6 /* UIStackView+remove.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A67EEE4928353D1D005CB4FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A67EEE4A28353D4F005CB4FA /* IPadSetupGameView.swift */,
+				A679EBDA283CE0E200F8670D /* IPhoneSetupGameView.swift */,
+				A62EA4E82844C44800530EE6 /* LegalActionsView.swift */,
+				A62FD15728549F0D005F2DAC /* AiActionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A67EEE4C283697B7005CB4FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A67EEE4D283697CC005CB4FA /* Card.swift */,
+				A67EEE4F28369A77005CB4FA /* CardType.swift */,
+				A62FD153284E2005005F2DAC /* LayoutCards.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A62404322834FAE900206213 /* Belote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A624044A2834FAEA00206213 /* Build configuration list for PBXNativeTarget "Belote" */;
+			buildPhases = (
+				A624042F2834FAE900206213 /* Sources */,
+				A62404302834FAE900206213 /* Frameworks */,
+				A62404312834FAE900206213 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Belote;
+			productName = Belote;
+			productReference = A62404332834FAE900206213 /* Belote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A624042B2834FAE900206213 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					A62404322834FAE900206213 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = A624042E2834FAE900206213 /* Build configuration list for PBXProject "Belote" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A624042A2834FAE900206213;
+			productRefGroup = A62404342834FAE900206213 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A62404322834FAE900206213 /* Belote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A62404312834FAE900206213 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A679EBD7283CDF4900F8670D /* Colors.xcassets in Resources */,
+				A67EEE4528353962005CB4FA /* IPadSetupGameView.xib in Resources */,
+				A62404422834FAE900206213 /* MainIPhone.storyboard in Resources */,
+				A62404392834FAE900206213 /* GameScene.sks in Resources */,
+				A62404442834FAEA00206213 /* Assets.xcassets in Resources */,
+				A679EBD9283CE0D200F8670D /* IPhoneSetupGameView.xib in Resources */,
+				A62EA4E72844C2B900530EE6 /* LegalActionsView.xib in Resources */,
+				A62404472834FAEA00206213 /* LaunchScreen.storyboard in Resources */,
+				A67EEE3E28352CC0005CB4FA /* MainIPad.storyboard in Resources */,
+				A624043B2834FAE900206213 /* Actions.sks in Resources */,
+				A62FD15628549E39005F2DAC /* AiActionView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A624042F2834FAE900206213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A679EBDD283D1D0200F8670D /* CustomAction.swift in Sources */,
+				A679EBD0283B9CF600F8670D /* Int+CGFLoat.swift in Sources */,
+				A679EBDB283CE0E200F8670D /* IPhoneSetupGameView.swift in Sources */,
+				A679EBD2283BE73D00F8670D /* IPhoneGameViewController.swift in Sources */,
+				A62EA4E12843DFFB00530EE6 /* CloseSessionWebResponse.swift in Sources */,
+				A67EEE4828353B7A005CB4FA /* UIView+NibLoadable.swift in Sources */,
+				A67EEE4E283697CC005CB4FA /* Card.swift in Sources */,
+				A62EA4E32843E05000530EE6 /* CloseSession.swift in Sources */,
+				A624043D2834FAE900206213 /* GameScene.swift in Sources */,
+				A62EA4DF2843DB5F00530EE6 /* GameTrackingDataWebTransformer.swift in Sources */,
+				A679EBFC283FECF000F8670D /* HTTPManager.swift in Sources */,
+				A67EEE522837D237005CB4FA /* CGMutablePath+CurvedPath.swift in Sources */,
+				A679EBF6283FECA800F8670D /* BeloteService.swift in Sources */,
+				A679EC01283FED5D00F8670D /* Belote.swift in Sources */,
+				A62EA4DD2843DB0D00530EE6 /* GameTrackingData.swift in Sources */,
+				A679EC07283FFD8200F8670D /* SessionCodeWebTransformer.swift in Sources */,
+				A62EA4E52843E06F00530EE6 /* CloseSessionWebTransformer.swift in Sources */,
+				A654E1372841129000083235 /* GameService.swift in Sources */,
+				A679EC05283FFB8800F8670D /* SessionCodeWebResponse.swift in Sources */,
+				A62EA4EB2844D0D400530EE6 /* UIView+aspectRatio.swift in Sources */,
+				A679EC092840102700F8670D /* CardTypeDTO.swift in Sources */,
+				A67EEE5028369A77005CB4FA /* CardType.swift in Sources */,
+				A679EBFA283FECE000F8670D /* Empty.swift in Sources */,
+				A62EA4E92844C44800530EE6 /* LegalActionsView.swift in Sources */,
+				A679EBF0283FEC3100F8670D /* BeloteWebResponse.swift in Sources */,
+				A624043F2834FAE900206213 /* IPadGameViewController.swift in Sources */,
+				A62EA4DB2843D9CB00530EE6 /* GameTrackingDataWebResponse.swift in Sources */,
+				A679EBF3283FEC6600F8670D /* BeloteWebTransformer.swift in Sources */,
+				A62404372834FAE900206213 /* AppDelegate.swift in Sources */,
+				A62FD15828549F0D005F2DAC /* AiActionView.swift in Sources */,
+				A679EBED283FEBF700F8670D /* BeloteWebService.swift in Sources */,
+				A62EA4ED2844F04D00530EE6 /* UIStackView+remove.swift in Sources */,
+				A679EBFE283FED0200F8670D /* HTTPRequest.swift in Sources */,
+				A67EEE4B28353D4F005CB4FA /* IPadSetupGameView.swift in Sources */,
+				A679EBCE283B9B7F00F8670D /* Operator+increment.swift in Sources */,
+				A679EC03283FFB5400F8670D /* SessionCode.swift in Sources */,
+				A62FD154284E2005005F2DAC /* LayoutCards.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A62404402834FAE900206213 /* MainIPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A62404412834FAE900206213 /* Base */,
+			);
+			name = MainIPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A62404452834FAEA00206213 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A62404462834FAEA00206213 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A62404482834FAEA00206213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A62404492834FAEA00206213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A624044B2834FAEA00206213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = LFSXRQW2Z2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sitic.Belote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A624044C2834FAEA00206213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = LFSXRQW2Z2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sitic.Belote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A624042E2834FAE900206213 /* Build configuration list for PBXProject "Belote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62404482834FAEA00206213 /* Debug */,
+				A62404492834FAEA00206213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A624044A2834FAEA00206213 /* Build configuration list for PBXNativeTarget "Belote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A624044B2834FAEA00206213 /* Debug */,
+				A624044C2834FAEA00206213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A624042B2834FAE900206213 /* Project object */;
+}

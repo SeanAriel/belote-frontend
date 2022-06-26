@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AiActionView" customModule="Belote" customModuleProvider="target">
+            <connections>
+                <outlet property="stackView" destination="LNr-C2-twJ" id="A2Z-kT-TsP"/>
+                <outlet property="titleLabel" destination="tZz-Pv-et1" id="WvS-x5-Wd4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="500"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AI action" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZz-Pv-et1">
+                    <rect key="frame" x="15" y="5" width="370" height="95"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="LNr-C2-twJ">
+                    <rect key="frame" x="0.0" y="100" width="400" height="400"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="LNr-C2-twJ" secondAttribute="height" id="EDs-pp-p9n"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="15" left="15" bottom="15" right="15"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="tZz-Pv-et1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="6GE-Ua-8ew"/>
+                <constraint firstAttribute="trailing" secondItem="tZz-Pv-et1" secondAttribute="trailing" constant="15" id="7Gw-xn-xHN"/>
+                <constraint firstAttribute="bottom" secondItem="LNr-C2-twJ" secondAttribute="bottom" id="8QR-W5-r5c"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LNr-C2-twJ" secondAttribute="trailing" id="FjZ-uB-9z4"/>
+                <constraint firstItem="LNr-C2-twJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Fra-Mt-bDo"/>
+                <constraint firstItem="LNr-C2-twJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" id="Hun-RB-cWZ"/>
+                <constraint firstItem="LNr-C2-twJ" firstAttribute="top" secondItem="tZz-Pv-et1" secondAttribute="bottom" id="W8y-C6-NaA"/>
+                <constraint firstItem="tZz-Pv-et1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Yxn-2n-5gJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="30"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="139" y="73"/>
+        </view>
+    </objects>
+</document>
